@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "warcraft";
+  src: url(./LifeCraft_Font.ttf);
+}
+
+@import "./mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  //   position: relative;
+
+  h1 {
+    position: absolute;
+    @include center;
+    // margin-left: auto;
+    // margin-right: auto;
+    // left: 0;
+    // right: 0;
+    top: 8px;
+    font-family: warcraft;
+    font-size: 2.8rem;
+    color: rgba(148, 148, 148, 0.601);
+    text-align: center;
+  }
+
+  .hero {
+    width: 100vw;
+    height: 80vh;
+  }
+
+  .card-container {
+    display: grid;
+    width: 75%;
+    @include center;
+    gap: 10px;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    //   grid-template-columns: 1fr 1fr 1fr;
+    //   grid-template-rows: 1fr 1fr;
+    background-color: cadetblue;
+
+    .card {
+      background-color: palevioletred;
+      width: 300px;
+      text-align: center;
+
+      img {
+        width: 9rem;
+        height: auto;
+      }
+    }
+
+    .c-1 {
+      // background-color: azure;
+    }
+  }
+}
