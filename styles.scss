@@ -12,50 +12,73 @@
 }
 
 body {
-  //   position: relative;
+  height: 3000px;
+}
 
-  h1 {
-    position: absolute;
+h1 {
+  position: absolute;
+  @include center;
+  // margin-left: auto;
+  // margin-right: auto;
+  // left: 0;
+  // right: 0;
+  top: 8px;
+  font-family: warcraft;
+  font-size: 2.8rem;
+  color: rgb(148, 148, 148);
+  text-align: center;
+}
+
+.hero {
+  width: 100%;
+  height: 80vh;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100px;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: tan;
+
+  & a {
+    background-color: lime;
+    text-decoration: none;
+    &:hover {
+      background-color: red;
+    }
+    // justify-self: center;
+  }
+}
+
+.card-container {
+  display: grid;
+  width: 75%;
+  @include center;
+  gap: 10px;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  //   grid-template-columns: 1fr 1fr 1fr;
+  //   grid-template-rows: 1fr 1fr;
+  background-color: cadetblue;
+
+  & .card {
     @include center;
-    // margin-left: auto;
-    // margin-right: auto;
-    // left: 0;
-    // right: 0;
-    top: 8px;
-    font-family: warcraft;
-    font-size: 2.8rem;
-    color: rgba(148, 148, 148, 0.601);
+    background-color: palevioletred;
+    width: 300px;
     text-align: center;
+
+    & img {
+      width: 9rem;
+      height: auto;
+    }
   }
 
-  .hero {
-    width: 100vw;
-    height: 80vh;
-  }
-
-  .card-container {
-    display: grid;
-    width: 75%;
-    @include center;
-    gap: 10px;
-    grid-template: 1fr 1fr / 1fr 1fr 1fr;
-    //   grid-template-columns: 1fr 1fr 1fr;
-    //   grid-template-rows: 1fr 1fr;
-    background-color: cadetblue;
-
-    .card {
-      background-color: palevioletred;
-      width: 300px;
-      text-align: center;
-
-      img {
-        width: 9rem;
-        height: auto;
-      }
-    }
-
-    .c-1 {
-      // background-color: azure;
-    }
+  .c-1 {
+    // background-color: azure;
   }
 }
