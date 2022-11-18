@@ -12,7 +12,7 @@
 }
 
 body {
-  height: 3000px;
+  height: 1300px;
 }
 
 h1 {
@@ -76,9 +76,24 @@ nav {
       width: 9rem;
       height: auto;
     }
+
+    & .event-description {
+      display: none;
+    }
   }
 
   .c-1 {
     // background-color: azure;
+  }
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  & p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: #234566;
   }
 }

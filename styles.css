@@ -9,7 +9,7 @@
 }
 
 body {
-  height: 3000px;
+  height: 1300px;
 }
 
 h1 {
@@ -73,4 +73,17 @@ nav a:hover {
 .card-container .card img {
   width: 9rem;
   height: auto;
+}
+.card-container .card .event-description {
+  display: none;
+}
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+footer p {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: #234566;
 }/*# sourceMappingURL=styles.css.map */
