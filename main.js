@@ -1,8 +1,8 @@
 "use strict";
 
 /*
-TODO: lägg till alt på alla bilder
-
+TODO: 
+Lägg till alt på alla bilder
 Använd: $("#nav-placeholder").load("nav.html"); för att ladda in navbar på alla sidor
 */
 
