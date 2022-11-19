@@ -1,6 +1,8 @@
 @import "./layouts/navbar";
+@import "./abstracts/mixins";
 
 @include navbar;
+@include default-reset;
 
 h1 {
   text-align: center;

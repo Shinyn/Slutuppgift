@@ -4,3 +4,11 @@
   left: 0;
   right: 0;
 }
+
+@mixin default-reset {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
