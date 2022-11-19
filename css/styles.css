@@ -1,6 +1,6 @@
 @font-face {
   font-family: "warcraft";
-  src: url(./LifeCraft_Font.ttf);
+  src: url(../LifeCraft_Font.ttf);
 }
 * {
   margin: 0;
@@ -77,6 +77,7 @@ nav a:hover {
 .card-container .card .event-description {
   display: none;
 }
+
 footer {
   position: fixed;
   width: 100%;

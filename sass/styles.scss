@@ -1,9 +1,10 @@
 @font-face {
   font-family: "warcraft";
-  src: url(./LifeCraft_Font.ttf);
+  src: url(../LifeCraft_Font.ttf);
 }
 
 @import "./abstracts/mixins";
+@import "./layouts/navbar";
 
 * {
   margin: 0;
@@ -34,27 +35,7 @@ h1 {
   height: 80vh;
 }
 
-nav {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100px;
-  top: 0;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  background-color: tan;
-
-  & a {
-    background-color: lime;
-    text-decoration: none;
-    &:hover {
-      background-color: red;
-    }
-    // justify-self: center;
-  }
-}
+@include navbar;
 
 .card-container {
   display: grid;
@@ -80,10 +61,6 @@ nav {
     & .event-description {
       display: none;
     }
-  }
-
-  .c-1 {
-    // background-color: azure;
   }
 }
 

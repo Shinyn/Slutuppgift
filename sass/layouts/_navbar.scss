@@ -1,0 +1,22 @@
+@mixin navbar {
+  nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100px;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: tan;
+
+    & a {
+      background-color: lime;
+      text-decoration: none;
+      &:hover {
+        background-color: red;
+      }
+    }
+  }
+}

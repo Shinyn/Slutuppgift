@@ -1,5 +1,49 @@
-img {
-  width: 110px;
+.card-container {
+  display: grid;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  gap: 10px;
+  grid-template: 1fr 1fr/1fr 1fr 1fr;
+  background-color: cadetblue;
+}
+.card-container .card {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-color: palevioletred;
+  width: 300px;
+  text-align: center;
+}
+.card-container .card img {
+  width: 9rem;
+  height: auto;
+}
+.card-container .card .event-description {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100px;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: tan;
+}
+nav a {
+  background-color: lime;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: red;
 }
 
 /*# sourceMappingURL=alla-events.css.map */

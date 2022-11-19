@@ -1,0 +1,28 @@
+@mixin card-container {
+  .card-container {
+    display: grid;
+    width: 75%;
+    @include center;
+    gap: 10px;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    //   grid-template-columns: 1fr 1fr 1fr;
+    //   grid-template-rows: 1fr 1fr;
+    background-color: cadetblue;
+
+    & .card {
+      @include center;
+      background-color: palevioletred;
+      width: 300px;
+      text-align: center;
+
+      & img {
+        width: 9rem;
+        height: auto;
+      }
+
+      & .event-description {
+        display: none;
+      }
+    }
+  }
+}
