@@ -22,5 +22,59 @@
       <a href="../html/skapa-event.html">Skapa event</a>
       <a href="../html/om-oss.html">Om oss</a>
     </nav>
+
+    <div class="main">
+      <form class="form" action="" method="GET">
+        <div>
+          <label for="name">Name</label>
+          <input name="name" type="text" placeholder="John Doe" />
+        </div>
+
+        <div>
+          <label for="date">Date</label>
+          <input name="date" type="date" />
+        </div>
+
+        <div>
+          <label for="description">Description</label>
+          <input name="description" type="text" />
+        </div>
+
+        <div>
+          <label for="agenda">Agenda</label>
+          <input name="agenda" type="text" />
+        </div>
+
+        <div>
+          <label for="images">Images</label>
+          <input name="images" type="file" multiple="multiple" />
+        </div>
+
+        <div>
+          <label for="category-options">Category</label>
+          <select name="category-options">
+            <option value="raid">Raid</option>
+            <option value="pvp">PvP</option>
+            <option value="social">Social</option>
+            <option value="leveling">Leveling</option>
+          </select>
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+    <!-- 
+      - Event Form: Det ska finnas ett administrationgränssnitt som låter en användare skapa ett event.
+    - Endast formulär utan back-end koppling.
+    - Formuläret ska innehålla
+        - Namn på event
+        - Datum
+        - Kort beskrivning
+        - Agenda
+        - Plats för att ladda upp 4 bilder
+        - Val av kategori (antingen nöje, utbildning, afterwork)
+        - Submit knapp som inte måste göra något
+     -->
   </body>
 </html>
