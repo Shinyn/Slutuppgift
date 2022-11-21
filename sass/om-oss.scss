@@ -4,6 +4,22 @@
 @include navbar;
 @include default-reset;
 
+body {
+  height: 1300px;
+}
+
 h1 {
   text-align: center;
+}
+
+.main-section {
+  text-align: center;
+  background-color: rgb(136, 255, 245);
+}
+
+.form {
+  @include center;
+  display: grid;
+  background-color: rgb(222, 128, 212);
+  width: 500px;
 }

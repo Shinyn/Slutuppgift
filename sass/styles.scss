@@ -6,11 +6,7 @@
 @import "./abstracts/mixins";
 @import "./layouts/navbar";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@include default-reset;
 
 body {
   height: 1300px;
