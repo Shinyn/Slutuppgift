@@ -1,18 +1,79 @@
 @import "./layouts/navbar";
 @import "./abstracts/mixins";
+@import "./abstracts/variables";
 
 @include navbar;
 @include default-reset;
+@include warcraft-font;
+
+body {
+  height: 1300px;
+  background-color: $wow-dark;
+}
 
 h1 {
+  margin-top: 5px;
+  font-size: 3.7rem;
+  color: #0074e0;
   text-align: center;
 }
 
 .main {
-  text-align: center;
-  background-color: aquamarine;
-}
+  @include center;
+  background-color: rgb(213, 213, 213);
+  width: 500px;
+  border-radius: 8px;
 
-.form {
-  //   background-color: blanchedalmond;
+  & .form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 12px;
+
+    & .form-item {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+
+      & label {
+        padding: 0.3rem;
+        background-color: rgb(175, 133, 216);
+      }
+
+      & input {
+        padding: 0.4rem;
+        font-size: 1.2rem;
+        // background-color: rgb(243, 250, 33);
+      }
+
+      & textarea {
+        padding: 0.3rem;
+        font-size: 1rem;
+        height: 4rem;
+        resize: none;
+      }
+    }
+
+    & .drop-down {
+      font-size: 1.2rem;
+    }
+
+    & button {
+      width: 97%;
+      height: 2.3rem;
+      font-size: 1.5rem;
+      align-self: center;
+      border-radius: 5px;
+      background-color: $wow-blue;
+      border: none;
+      color: $wow-white;
+
+      &:hover {
+        transition: 0.1s linear;
+        border: solid rgba(48, 196, 255, 0.862) 2px;
+      }
+    }
+  }
 }

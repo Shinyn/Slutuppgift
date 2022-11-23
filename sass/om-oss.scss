@@ -3,6 +3,7 @@
 
 @include navbar;
 @include default-reset;
+@include warcraft-font;
 
 body {
   height: 1300px;
@@ -13,14 +14,20 @@ h1 {
 }
 
 .main-section {
+  @include center;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
+  width: 75%;
   text-align: center;
   background-color: rgb(136, 255, 245);
-}
 
-.form {
-  @include center;
-  display: grid;
-  background-color: rgb(222, 128, 212);
-  width: 500px;
+  & .form {
+    @include center;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(222, 128, 212);
+  }
 }

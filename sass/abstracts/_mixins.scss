@@ -10,5 +10,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: warcraft;
   }
+}
+
+@mixin warcraft-font {
+  @font-face {
+    font-family: "warcraft";
+    src: url(../LifeCraft_Font.ttf);
+  }
+}
+
+@mixin background {
+  background: rgb(44, 38, 163);
+  background: linear-gradient(
+    0deg,
+    rgba(44, 38, 163, 1) 14%,
+    rgba(164, 39, 39, 1) 82%
+  );
 }

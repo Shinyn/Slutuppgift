@@ -8,29 +8,94 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  background-color: tan;
+  background: rgb(44, 38, 163);
+  background: linear-gradient(0deg, rgb(44, 38, 163) 14%, rgb(164, 39, 39) 82%);
 }
 nav a {
-  background-color: lime;
+  font-size: 1.2rem;
+  letter-spacing: 0.03rem;
+  color: white;
   text-decoration: none;
 }
 nav a:hover {
-  background-color: red;
+  color: fuchsia;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: warcraft;
+}
+
+@font-face {
+  font-family: "warcraft";
+  src: url(../LifeCraft_Font.ttf);
+}
+body {
+  height: 1300px;
+  background-color: #15171e;
 }
 
 h1 {
+  margin-top: 5px;
+  font-size: 3.7rem;
+  color: #0074e0;
   text-align: center;
 }
 
 .main {
-  text-align: center;
-  background-color: aquamarine;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-color: rgb(213, 213, 213);
+  width: 500px;
+  border-radius: 8px;
+}
+.main .form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px;
+}
+.main .form .form-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.main .form .form-item label {
+  padding: 0.3rem;
+  background-color: rgb(175, 133, 216);
+}
+.main .form .form-item input {
+  padding: 0.4rem;
+  font-size: 1.2rem;
+}
+.main .form .form-item textarea {
+  padding: 0.3rem;
+  font-size: 1rem;
+  height: 4rem;
+  resize: none;
+}
+.main .form .drop-down {
+  font-size: 1.2rem;
+}
+.main .form button {
+  width: 97%;
+  height: 2.3rem;
+  font-size: 1.5rem;
+  align-self: center;
+  border-radius: 5px;
+  background-color: #0074e0;
+  border: none;
+  color: #fffafd;
+}
+.main .form button:hover {
+  transition: 0.1s linear;
+  border: solid rgba(48, 196, 255, 0.862) 2px;
 }
 
 /*# sourceMappingURL=skapa-event.css.map */

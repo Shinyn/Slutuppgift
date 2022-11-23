@@ -8,22 +8,30 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  background-color: tan;
+  background: rgb(44, 38, 163);
+  background: linear-gradient(0deg, rgb(44, 38, 163) 14%, rgb(164, 39, 39) 82%);
 }
 nav a {
-  background-color: lime;
+  font-size: 1.2rem;
+  letter-spacing: 0.03rem;
+  color: white;
   text-decoration: none;
 }
 nav a:hover {
-  background-color: red;
+  color: fuchsia;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: warcraft;
 }
 
+@font-face {
+  font-family: "warcraft";
+  src: url(../LifeCraft_Font.ttf);
+}
 body {
   height: 1300px;
 }
@@ -33,19 +41,27 @@ h1 {
 }
 
 .main-section {
-  height: 100vh;
-  text-align: center;
-  background-color: rgb(136, 255, 245);
-}
-
-.form {
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  display: grid;
-  background-color: rgb(222, 128, 212);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 75%;
+  text-align: center;
+  background-color: rgb(136, 255, 245);
+}
+.main-section .form {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(222, 128, 212);
 }
 
 /*# sourceMappingURL=om-oss.css.map */

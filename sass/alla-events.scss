@@ -1,7 +1,9 @@
 @import "./abstracts/mixins";
 @import "./layouts/card-container";
 @import "./layouts/navbar";
+@import "./abstracts/variables";
 
 @include card-container;
 @include navbar;
 @include default-reset;
+@include warcraft-font;

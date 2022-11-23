@@ -1,0 +1,9 @@
+@import "./abstracts/mixins";
+@import "./layouts/navbar";
+
+@include navbar;
+@include default-reset;
+
+body {
+  background-color: green;
+}

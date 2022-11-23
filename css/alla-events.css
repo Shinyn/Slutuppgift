@@ -1,11 +1,12 @@
 .card-container {
   display: grid;
   width: 75%;
+  padding: 2rem;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  gap: 10px;
+  gap: 2rem;
   grid-template: 1fr 1fr/1fr 1fr 1fr;
   background-color: cadetblue;
 }
@@ -25,6 +26,13 @@
 .card-container .card .event-description {
   display: none;
 }
+.card-container .card button {
+  background-color: #0074e0;
+  color: #fffafd;
+  padding: 0.5rem;
+  width: 60%;
+  font-size: 1.2rem;
+}
 
 nav {
   position: fixed;
@@ -36,20 +44,29 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  background-color: tan;
+  background: rgb(44, 38, 163);
+  background: linear-gradient(0deg, rgb(44, 38, 163) 14%, rgb(164, 39, 39) 82%);
 }
 nav a {
-  background-color: lime;
+  font-size: 1.2rem;
+  letter-spacing: 0.03rem;
+  color: white;
   text-decoration: none;
 }
 nav a:hover {
-  background-color: red;
+  color: fuchsia;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: warcraft;
+}
+
+@font-face {
+  font-family: "warcraft";
+  src: url(../LifeCraft_Font.ttf);
 }
 
 /*# sourceMappingURL=alla-events.css.map */

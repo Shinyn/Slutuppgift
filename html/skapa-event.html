@@ -14,54 +14,56 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Skapa event!</h1>
+    <h1>Create event!</h1>
     <!-- Navbar -->
     <nav>
-      <a href="../index.html">Hem</a>
-      <a href="../html/alla-events.html">Alla events</a>
-      <a href="../html/skapa-event.html">Skapa event</a>
-      <a href="../html/om-oss.html">Om oss</a>
+      <a href="../index.html">Home</a>
+      <a href="../html/alla-events.html">All events</a>
+      <a href="../html/skapa-event.html">Create event</a>
+      <a href="../html/om-oss.html">About</a>
     </nav>
 
     <div class="main">
       <form class="form" action="" method="GET">
-        <div>
+        <div class="form-item form-name">
           <label for="name">Name</label>
           <input name="name" type="text" placeholder="John Doe" />
         </div>
 
-        <div>
+        <div class="form-item form-date">
           <label for="date">Date</label>
           <input name="date" type="date" />
         </div>
 
-        <div>
+        <div class="form-item form-description">
           <label for="description">Description</label>
-          <input name="description" type="text" />
+          <textarea name="description"></textarea>
+          <!-- <input name="description" type="text" /> -->
         </div>
 
-        <div>
+        <div class="form-item form-agenda">
           <label for="agenda">Agenda</label>
-          <input name="agenda" type="text" />
+          <textarea name="agenda"></textarea>
+          <!-- <input name="agenda" type="text" /> -->
         </div>
 
-        <div>
+        <div class="form-item form-file-picker">
           <label for="images">Images</label>
           <input name="images" type="file" multiple="multiple" />
         </div>
 
-        <div>
+        <div class="form-item form-drop-down">
           <label for="category-options">Category</label>
-          <select name="category-options">
-            <option value="raid">Raid</option>
-            <option value="pvp">PvP</option>
-            <option value="social">Social</option>
-            <option value="leveling">Leveling</option>
+          <select class="drop-down" name="category-options">
+            <option class="drop-down-item" value="raid">Raid</option>
+            <option class="drop-down-item" value="pvp">PvP</option>
+            <option class="drop-down-item" value="social">Social</option>
+            <option class="drop-down-item" value="leveling">Leveling</option>
           </select>
         </div>
 
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+        <button class="form-itemb form-submit" type="submit">Submit</button>
+        <!-- <button class="form-itemb form-reset" type="reset">Reset</button> -->
       </form>
     </div>
     <!-- 

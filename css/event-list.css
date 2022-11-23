@@ -1,0 +1,35 @@
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100px;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: rgb(44, 38, 163);
+  background: linear-gradient(0deg, rgb(44, 38, 163) 14%, rgb(164, 39, 39) 82%);
+}
+nav a {
+  font-size: 1.2rem;
+  letter-spacing: 0.03rem;
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: fuchsia;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: warcraft;
+}
+
+body {
+  background-color: green;
+}
+
+/*# sourceMappingURL=event-list.css.map */

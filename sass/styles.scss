@@ -1,26 +1,22 @@
-@font-face {
-  font-family: "warcraft";
-  src: url(../LifeCraft_Font.ttf);
-}
-
 @import "./abstracts/mixins";
 @import "./layouts/navbar";
+@import "./abstracts/variables";
+@import "./layouts/card-container";
 
 @include default-reset;
+@include warcraft-font;
+@include navbar;
+@include card-container;
 
 body {
   height: 1300px;
+  background-color: $wow-dark;
 }
 
 h1 {
   position: absolute;
   @include center;
-  // margin-left: auto;
-  // margin-right: auto;
-  // left: 0;
-  // right: 0;
   top: 8px;
-  font-family: warcraft;
   font-size: 2.8rem;
   color: rgb(148, 148, 148);
   text-align: center;
@@ -29,35 +25,6 @@ h1 {
 .hero {
   width: 100%;
   height: 80vh;
-}
-
-@include navbar;
-
-.card-container {
-  display: grid;
-  width: 75%;
-  @include center;
-  gap: 10px;
-  grid-template: 1fr 1fr / 1fr 1fr 1fr;
-  //   grid-template-columns: 1fr 1fr 1fr;
-  //   grid-template-rows: 1fr 1fr;
-  background-color: cadetblue;
-
-  & .card {
-    @include center;
-    background-color: palevioletred;
-    width: 300px;
-    text-align: center;
-
-    & img {
-      width: 9rem;
-      height: auto;
-    }
-
-    & .event-description {
-      display: none;
-    }
-  }
 }
 
 footer {
