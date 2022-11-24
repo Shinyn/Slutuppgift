@@ -5,10 +5,38 @@
 @include default-reset;
 @include warcraft-font;
 
-h1 {
+* {
   text-align: center;
 }
 
 body {
-  background-color: green;
+  background-color: #5a4fa2;
+
+  & h1 {
+    margin-top: 10px;
+  }
+
+  & h3 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  & p {
+    font-size: 1.4rem;
+  }
+
+  & .images {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    gap: 10px;
+
+    & img {
+      width: 250px;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
 }

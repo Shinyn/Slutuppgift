@@ -32,12 +32,34 @@ nav a:hover {
   font-family: "warcraft";
   src: url(../LifeCraft_Font.ttf);
 }
-h1 {
+* {
   text-align: center;
 }
 
 body {
-  background-color: green;
+  background-color: #5a4fa2;
+}
+body h1 {
+  margin-top: 10px;
+}
+body h3 {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+body p {
+  font-size: 1.4rem;
+}
+body .images {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  gap: 10px;
+}
+body .images img {
+  width: 250px;
+}
+body .images img:hover {
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=event-list.css.map */
