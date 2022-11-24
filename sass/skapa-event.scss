@@ -2,10 +2,12 @@
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
 @import "./layouts/button";
+@import "./layouts/footer";
 
 @include navbar;
 @include default-reset;
 @include warcraft-font;
+@include footer;
 
 body {
   height: 1300px;

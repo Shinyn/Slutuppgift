@@ -1,10 +1,12 @@
 @import "./abstracts/mixins";
 @import "./layouts/navbar";
 @import "./abstracts/variables";
+@import "./layouts/footer";
 
 @include navbar;
 @include default-reset;
 @include warcraft-font;
+@include footer;
 
 * {
   text-align: center;

@@ -2,11 +2,13 @@
 @import "./layouts/card-container";
 @import "./layouts/navbar";
 @import "./abstracts/variables";
+@import "./layouts/footer";
 
 @include card-container;
 @include navbar;
 @include default-reset;
 @include warcraft-font;
+@include footer;
 
 body {
   background-color: $wow-dark;

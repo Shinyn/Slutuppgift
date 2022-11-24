@@ -1,0 +1,14 @@
+@mixin footer {
+  footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1 !important;
+    & p {
+      font-size: 1rem !important;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      background-color: #234566;
+    }
+  }
+}
