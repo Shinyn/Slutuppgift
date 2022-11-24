@@ -28,6 +28,14 @@ nav a:hover {
   font-family: warcraft;
 }
 
+@font-face {
+  font-family: "warcraft";
+  src: url(../LifeCraft_Font.ttf);
+}
+h1 {
+  text-align: center;
+}
+
 body {
   background-color: green;
 }

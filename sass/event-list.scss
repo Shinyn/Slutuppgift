@@ -3,6 +3,11 @@
 
 @include navbar;
 @include default-reset;
+@include warcraft-font;
+
+h1 {
+  text-align: center;
+}
 
 body {
   background-color: green;

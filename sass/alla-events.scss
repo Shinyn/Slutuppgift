@@ -7,3 +7,7 @@
 @include navbar;
 @include default-reset;
 @include warcraft-font;
+
+body {
+  background-color: $wow-dark;
+}

@@ -15,19 +15,27 @@ h1 {
 
 .main-section {
   @include center;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  // grid-row: repeat(5 1fr);
+  height: 1000px;
   width: 75%;
   text-align: center;
+  font-size: 1.2rem;
   background-color: rgb(136, 255, 245);
 
   & .form {
     @include center;
     width: 500px;
     height: 500px;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     background-color: rgb(222, 128, 212);
+  }
+
+  & p {
+    width: 200px;
+    background-color: lightcoral;
+    text-align: center;
   }
 }
