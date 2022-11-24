@@ -29,3 +29,11 @@
     rgba(164, 39, 39, 1) 82%
   );
 }
+
+@mixin color {
+  color: linear-gradient(
+    0deg,
+    rgba(44, 38, 163, 1) 14%,
+    rgba(164, 39, 39, 1) 82%
+  );
+}

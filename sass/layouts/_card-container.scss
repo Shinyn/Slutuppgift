@@ -8,13 +8,14 @@
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
     //   grid-template-columns: 1fr 1fr 1fr;
     //   grid-template-rows: 1fr 1fr;
-    background-color: $wow-dark;
+    // background-color: $wow-dark;
+    background-color: red;
 
     & .card {
       @include center;
       padding: 1rem;
       background-color: $wow-light-blue;
-      width: 300px;
+      width: 100%;
       text-align: center;
       border-radius: 8px;
 

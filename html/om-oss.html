@@ -14,7 +14,7 @@
     <title>About</title>
   </head>
   <body>
-    <h1>About</h1>
+    <!-- <h1>About</h1> -->
     <!-- NAV -->
     <nav>
       <a href="../index.html">Home</a>
@@ -27,36 +27,44 @@
     <div class="main-section">
       <div>
         <h3 class="heading">About the company</h3>
-        <p class="paragraph">
+        <p class="paragraph" id="about-company">
           Eventcraft is a website by the players, for the players. Anyone with a
           battle.net account can sign up and join Eventcraft for a better gaming
           experience.
         </p>
       </div>
+
+      <div class="ceo-div">
+        <img
+          src="../images/ceo.jpg"
+          alt="A human with blue hair and glowing eyes, a death knight"
+          id="ceo-img"
+        />
+        <div id="">
+          <h3 class="heading">Info from the CEO:</h3>
+          <p class="paragraph">
+            I am proud of the accomplishments our team has made in such a short
+            timespan. The work ethic is outstanding and I couldn't ask for a
+            better group of people.
+          </p>
+        </div>
+        <div id="contact-us">
+          <p>Contact us:</p>
+          <a href="tel:555 234 3344">Phone: 555 234 3344</a>
+          <a href="mailto: companymail@mail.com">Email: companymail@mail.com</a>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+
       <div>
-        <h3 class="heading">About the team</h3>
+        <h3 class="heading">The team</h3>
         <p class="paragraph">
           Jim, Joe, Jane, Fred, Darryl, Sophie, Sarah, Joanne, Lori, Dave & Kent
           are the backbone of this company. We are a group of longtime friends
           that all have played WoW since it's release in 2004.
         </p>
-      </div>
-      <div>
-        <h3 class="heading">Info from CEO</h3>
-        <p class="paragraph">
-          I am proud of the accomplishments our team has made in such a short
-          timespan. The work ethic is outstanding and I couldn't ask for a
-          better group of people.
-        </p>
-
-        <img
-          src="../images/ceo.jpg"
-          alt="A human with blue hair and glowing eyes, a death knight"
-          width="130px"
-          height="130px"
-        />
-        <a href="tel:111 222 3344">Tel: 555 234 3344</a>
-        <a href="mailto: companymail@mail.mm">Mail us!</a>
       </div>
       <img
         src="../images/team.jpg"
@@ -69,7 +77,7 @@
       <form class="form" action="" method="GET">
         <div class="form-name">
           <label for="name">Name</label>
-          <input name="name" type="text" placeholder="John Doe" />
+          <input name="name" type="text" required placeholder="John Doe" />
         </div>
         <div class="form-email">
           <label for="email">Email</label>

@@ -7,7 +7,13 @@ Använd: $("#nav-placeholder").load("nav.html"); för att ladda in navbar på al
 
 $(document).ready(function () {
   $(".event-info-button").click(function (className) {
-    $(".event-description").toggle(this.className);
+    const product = $(this).parent();
+    console.log(product);
+    const description = $(".event-description", product);
+    console.log(description.text());
+
+    $(this).siblings(".event-description").toggle(this);
+    // $(".event-description").toggle(this);
   });
 
   $(".submit-button").click((event) => {
@@ -24,3 +30,5 @@ const btn = document.getElementsById("test");
 btn.addEventLisener("click", function () {
   console.log("hello");
 });
+
+// form.style.display = "none";
