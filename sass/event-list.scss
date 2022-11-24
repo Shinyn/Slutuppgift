@@ -1,5 +1,6 @@
 @import "./abstracts/mixins";
 @import "./layouts/navbar";
+@import "./abstracts/variables";
 
 @include navbar;
 @include default-reset;
@@ -29,13 +30,13 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 8rem;
-    gap: 10px;
+    gap: 20px;
 
     & img {
       width: 250px;
 
       &:hover {
-        transform: scale(1.05);
+        transform: scale(1.1);
       }
     }
   }

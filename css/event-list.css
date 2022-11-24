@@ -53,13 +53,13 @@ body .images {
   display: flex;
   justify-content: center;
   margin-top: 8rem;
-  gap: 10px;
+  gap: 20px;
 }
 body .images img {
   width: 250px;
 }
 body .images img:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=event-list.css.map */
