@@ -6,8 +6,8 @@ Använd: $("#nav-placeholder").load("nav.html"); för att ladda in navbar på al
 */
 
 $(document).ready(function () {
-  $(".event-info-button").click(function () {
-    $(".event-description").toggle();
+  $(".event-info-button").click(function (className) {
+    $(".event-description").toggle(this.className);
   });
 
   $(".submit-button").click((event) => {
