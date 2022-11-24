@@ -21,9 +21,11 @@ h1 {
 
 .main {
   @include center;
-  background-color: rgb(213, 213, 213);
+  @include wow-color;
   width: 500px;
   border-radius: 8px;
+  padding: 5px;
+  padding-bottom: 10px;
 
   & .form {
     display: flex;
@@ -40,13 +42,12 @@ h1 {
 
       & label {
         padding: 0.3rem;
-        background-color: rgb(175, 133, 216);
+        background-color: $wow-blue;
       }
 
       & input {
         padding: 0.4rem;
         font-size: 1.2rem;
-        // background-color: rgb(243, 250, 33);
       }
 
       & textarea {

@@ -9,23 +9,52 @@
     //   grid-template-columns: 1fr 1fr 1fr;
     //   grid-template-rows: 1fr 1fr;
     // background-color: $wow-dark;
-    background-color: red;
+    // background-color: red;
+    border-radius: 8px;
+    color: rgb(177, 142, 12);
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 2px black;
 
     & .card {
       @include center;
       padding: 1rem;
-      background-color: $wow-light-blue;
+      @include wow-color;
       width: 100%;
       text-align: center;
       border-radius: 8px;
+      border: solid transparent 3px;
+      background-origin: border-box;
+      // overflow: hidden;
+
+      &:hover {
+        border: solid $wow-blue 3px;
+      }
 
       & img {
-        width: 13rem;
-        height: 8rem;
+        width: 15rem;
+        height: 9rem;
+        border: solid white 3px;
+        border-radius: 8px;
+
+        &:hover {
+          // border: solid $wow-blue 3px;
+          // transform: scale(1.5);
+        }
       }
 
       & .event-description {
         display: none;
+      }
+
+      & a {
+        color: $wow-light-blue;
+        text-decoration: none;
+        font-size: 1.4rem;
+        margin-left: 10px;
+
+        &:hover {
+          color: $wow-green;
+        }
       }
 
       & button {
