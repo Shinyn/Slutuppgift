@@ -14,7 +14,6 @@
     <title>About</title>
   </head>
   <body>
-    <!-- <h1>About</h1> -->
     <!-- NAV -->
     <nav>
       <a href="../index.html">Home</a>
@@ -26,7 +25,7 @@
     <!-- MAIN -->
     <div class="main-section">
       <div>
-        <h3 class="heading">About the company</h3>
+        <h3 class="heading">About Eventcraft:</h3>
         <p class="paragraph" id="about-company">
           Eventcraft is a website by the players, for the players. Anyone with a
           battle.net account can sign up and join Eventcraft for a better gaming
@@ -40,7 +39,7 @@
           alt="A human with blue hair and glowing eyes, a death knight"
           id="ceo-img"
         />
-        <div id="">
+        <div id="ceo-info">
           <h3 class="heading">Info from the CEO:</h3>
           <p class="paragraph">
             I am proud of the accomplishments our team has made in such a short
@@ -75,28 +74,18 @@
 
       <!-- FORM -->
       <form class="form" action="" method="GET">
-        <div class="form-name">
-          <label for="name">Name</label>
-          <input name="name" type="text" required placeholder="John Doe" />
-        </div>
-        <div class="form-email">
-          <label for="email">Email</label>
-          <input name="email" type="email" placeholder="john.doe@email.com" />
-        </div>
-        <div class="form-message">
-          <label for="message">Message</label>
-          <input
-            name="message"
-            type="text"
-            placeholder="Really cool website!"
-          />
-        </div>
+        <label class="form-name" for="name">Name</label>
+        <input name="name" type="text" required placeholder="John Doe" />
+
+        <label class="form-email" for="email">Email</label>
+        <input name="email" type="email" placeholder="john.doe@email.com" />
+
+        <label class="form-message" for="message">Message</label>
+        <textarea name="message" placeholder="Really cool website!"></textarea>
+        <!-- <input name="message" type="text" placeholder="Really cool website!" /> -->
+
         <button class="submit-button" type="submit">Submit</button>
-        <!-- <div>
-        </div> -->
-        <button type="reset">Reset</button>
-        <!-- <div>
-        </div> -->
+        <!-- <button type="reset">Reset</button> -->
       </form>
     </div>
 

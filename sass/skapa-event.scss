@@ -1,6 +1,7 @@
 @import "./layouts/navbar";
 @import "./abstracts/mixins";
 @import "./abstracts/variables";
+@import "./layouts/button";
 
 @include navbar;
 @include default-reset;
@@ -60,20 +61,6 @@ h1 {
       font-size: 1.2rem;
     }
 
-    & button {
-      width: 97%;
-      height: 2.3rem;
-      font-size: 1.5rem;
-      align-self: center;
-      border-radius: 5px;
-      background-color: $wow-blue;
-      border: none;
-      color: $wow-white;
-
-      &:hover {
-        transition: 0.1s linear;
-        border: solid $wow-light-blue 2px;
-      }
-    }
+    @include button;
   }
 }

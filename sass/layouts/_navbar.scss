@@ -9,18 +9,15 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
-    // background-color: tan;
     @include background;
 
     & a {
       font-size: 1.2rem;
       letter-spacing: 0.03rem;
       color: white;
-      // background-color: lime;
       text-decoration: none;
       &:hover {
-        // background-color: red;
-        color: fuchsia;
+        color: #30c4ffdc; //$wow-light-blue; Har slutat funka på event-list sidan av nån anledning???
       }
     }
   }
