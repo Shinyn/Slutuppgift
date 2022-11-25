@@ -11,7 +11,7 @@
   border-radius: 8px;
   color: rgb(177, 142, 12);
   letter-spacing: 1.5px;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 3px 3px 5px black;
 }
 .card-container .card {
   margin-left: auto;
@@ -19,7 +19,7 @@
   left: 0;
   right: 0;
   padding: 1rem;
-  background-image: linear-gradient(0deg, rgb(44, 38, 163) 14%, rgb(164, 39, 39) 82%);
+  background-image: linear-gradient(0deg, #2c26a3 14%, #a42727 82%);
   width: 100%;
   text-align: center;
   border-radius: 8px;
@@ -49,6 +49,7 @@
 }
 .card-container .card button {
   background-color: #0074e0;
+  text-shadow: 3px 3px 5px black;
   color: #fffafd;
   padding: 0.3rem;
   margin: 0.4rem;
@@ -73,8 +74,9 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  background-image: linear-gradient(0deg, rgb(44, 38, 163) 14%, rgb(164, 39, 39) 82%);
+  background-image: linear-gradient(0deg, #2c26a3 14%, #a42727 82%);
   z-index: 10;
+  text-shadow: 3px 3px 5px black;
 }
 nav a {
   font-size: 1.2rem;

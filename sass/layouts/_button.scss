@@ -7,7 +7,7 @@
     border-radius: 5px;
     background-color: $wow-blue;
     border: none;
-    color: $wow-white;
+    @include font-style;
 
     &:hover {
       transition: 0.1s linear;

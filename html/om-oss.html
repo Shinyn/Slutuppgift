@@ -61,8 +61,9 @@
         <h3 class="heading">The team</h3>
         <p class="paragraph">
           Jim, Joe, Jane, Fred, Darryl, Sophie, Sarah, Joanne, Lori, Dave & Kent
-          are the backbone of this company. We are a group of longtime friends
-          that all have played WoW since it's release in 2004.
+          are the backbone of this company. <br />
+          We are a group of longtime friends that all have played WoW since it's
+          release in 2004.
         </p>
       </div>
       <img
@@ -75,41 +76,26 @@
       <!-- FORM -->
       <form class="form" action="" method="GET">
         <label class="form-name" for="name">Name</label>
-        <input name="name" type="text" required placeholder="John Doe" />
+        <input name="name" type="text" placeholder="John Doe" required />
 
         <label class="form-email" for="email">Email</label>
-        <input name="email" type="email" placeholder="john.doe@email.com" />
+        <input
+          name="email"
+          type="email"
+          placeholder="john.doe@email.com"
+          required
+        />
 
         <label class="form-message" for="message">Message</label>
-        <textarea name="message" placeholder="Really cool website!"></textarea>
-        <!-- <input name="message" type="text" placeholder="Really cool website!" /> -->
+        <textarea
+          name="message"
+          placeholder="Really cool website!"
+          required
+        ></textarea>
 
         <button class="submit-button" type="submit">Submit</button>
-        <!-- <button type="reset">Reset</button> -->
       </form>
     </div>
-
-    <!-- 
-    - "Om oss" sidan ska innehålla följande
-        - Rubrik
-        - Paragraf med information om företaget
-        - Rubrik 2
-        - Paragraf med info om teamet
-        - Rubrik 2
-        - Paragraf med info från VDn
-        - Kontaktuppgifter till VDn
-            - Telefonnummer (VG: ska gå att klicka på för att ringa Vdn)
-            - Email (VG: ska gå att klicka på för att maila VDn)
-            - Bild
-        - Bild på teamet
-        - Kontaktformulär (behöver inte ha back-end koppling)
-            - Namn
-            - Email
-            - Meddelande
-            - Submitknapp
-                - VG: Tryck på knappen ska dölja formuläret och visa ett meddelande
-                    - "Tack för ditt meddelande. Vi återkopplar så fort vi kan "
-     -->
     <footer>
       <p>&copy;Mattias Alm</p>
     </footer>

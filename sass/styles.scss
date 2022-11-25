@@ -18,7 +18,9 @@ h1 {
   @include center;
   top: 8px;
   font-size: 2.8rem;
-  color: rgb(148, 148, 148);
+  letter-spacing: 0.3rem;
+  color: $wow-legendary;
+  text-shadow: 2px 2px 4px #ffffff;
   text-align: center;
 }
 

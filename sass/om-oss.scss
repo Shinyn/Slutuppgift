@@ -77,10 +77,10 @@ body {
     padding: 20px;
     background-color: rgb(222, 128, 212);
     @include wow-color;
-    // border: solid $wow-dark 2px;
     border-radius: 8px;
 
     & label {
+      @include font-style;
       font-size: 1.6rem;
       margin-right: 80px;
     }
@@ -98,6 +98,13 @@ body {
       width: 355px;
       resize: none;
       height: 40%;
+    }
+
+    & .appended {
+      color: $wow-light-green;
+      font-size: 2rem;
+      margin-top: 130px;
+      text-shadow: 3px 3px 5px black;
     }
 
     @include button;

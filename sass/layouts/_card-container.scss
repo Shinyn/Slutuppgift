@@ -6,14 +6,10 @@
     @include center;
     gap: 2rem;
     grid-template: 1fr 1fr / 1fr 1fr 1fr;
-    //   grid-template-columns: 1fr 1fr 1fr;
-    //   grid-template-rows: 1fr 1fr;
-    // background-color: $wow-dark;
-    // background-color: red;
     border-radius: 8px;
     color: rgb(177, 142, 12);
     letter-spacing: 1.5px;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 3px 3px 5px black;
 
     & .card {
       @include center;
@@ -59,7 +55,7 @@
 
       & button {
         background-color: $wow-blue;
-        color: $wow-white;
+        @include font-style;
         padding: 0.3rem;
         margin: 0.4rem;
         width: 60%;
