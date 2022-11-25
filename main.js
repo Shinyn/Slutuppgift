@@ -1,8 +1,7 @@
 "use strict";
 
 /*
-TODO: 
-Använd: $("#nav-placeholder").load("nav.html"); för att ladda in navbar på alla sidor
+Använd eventuellt: $("#nav-placeholder").load("nav.html"); för att ladda in navbar på alla sidor (detta sabbar dock live server).
 */
 
 $(document).ready(function () {
@@ -18,5 +17,14 @@ $(document).ready(function () {
     );
   });
 
-  // $("").toggle(this);
+  let hidden = true;
+  $("#extra-info-button").click(() => {
+    if (hidden) {
+      $("#p-hidden").slideDown(300);
+      hidden = false;
+    } else {
+      $("#p-hidden").slideUp(300);
+      hidden = true;
+    }
+  });
 });
