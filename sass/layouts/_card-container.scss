@@ -20,7 +20,6 @@
       border-radius: 8px;
       border: solid transparent 3px;
       background-origin: border-box;
-      // overflow: hidden;
 
       &:hover {
         border: solid $wow-blue 3px;
@@ -31,11 +30,6 @@
         height: 9rem;
         border: solid white 3px;
         border-radius: 8px;
-
-        &:hover {
-          // border: solid $wow-blue 3px;
-          // transform: scale(1.5);
-        }
       }
 
       & .event-description {

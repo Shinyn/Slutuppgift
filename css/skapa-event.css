@@ -32,6 +32,7 @@ nav a:hover {
 @font-face {
   font-family: "warcraft";
   src: url(../LifeCraft_Font.ttf);
+  font-display: swap;
 }
 footer {
   position: fixed;
@@ -47,7 +48,7 @@ footer p {
 }
 
 body {
-  height: 1300px;
+  height: 1000px;
   background-color: #15171e;
 }
 

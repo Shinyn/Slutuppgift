@@ -1,9 +1,5 @@
 "use strict";
 
-/*
-Använd eventuellt: $("#nav-placeholder").load("nav.html"); för att ladda in navbar på alla sidor (detta sabbar dock live server).
-*/
-
 $(document).ready(function () {
   $(".event-info-button").click(function (className) {
     $(this).siblings(".event-description").toggle(this);

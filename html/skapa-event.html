@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../css/skapa-event.css" rel="stylesheet" />
+    <link rel="icon" href="../images/wow-icon.png" type="image/x-icon" />
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
@@ -15,7 +16,7 @@
   </head>
   <body>
     <h1>Create Event</h1>
-    <!-- Navbar -->
+    <!-- NAV -->
     <nav>
       <a href="../index.html">Home</a>
       <a href="../html/alla-events.html">All events</a>
@@ -24,6 +25,7 @@
     </nav>
 
     <div class="main">
+      <!-- FORM -->
       <form class="form" action="" method="GET">
         <div class="form-item form-name">
           <label for="name">Name</label>
@@ -38,13 +40,11 @@
         <div class="form-item form-description">
           <label for="description">Description</label>
           <textarea name="description" required></textarea>
-          <!-- <input name="description" type="text" /> -->
         </div>
 
         <div class="form-item form-agenda">
           <label for="agenda">Agenda</label>
           <textarea name="agenda" required></textarea>
-          <!-- <input name="agenda" type="text" /> -->
         </div>
 
         <div class="form-item form-file-picker">
@@ -62,7 +62,7 @@
           </select>
         </div>
 
-        <button class="form-itemb form-submit" type="submit">Submit</button>
+        <button class="form-item-b form-submit" type="submit">Submit</button>
       </form>
     </div>
     <footer>
