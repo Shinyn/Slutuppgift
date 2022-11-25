@@ -126,6 +126,7 @@ body {
   height: 2rem;
   width: 99%;
   right: 0%;
+  background-color: #fffafd;
 }
 .main-section .form textarea {
   width: 355px;

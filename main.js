@@ -9,10 +9,10 @@ $(document).ready(function () {
     $(this).siblings(".event-description").toggle(this);
   });
 
-  $(".form").on("submit", function (event) {
+  $("#form").on("submit", function (event) {
     event.preventDefault();
-    $(".form").children().hide();
-    $(".form").append(
+    $("#form").children().hide();
+    $("#form").append(
       "<div class='appended'>Thank you for messaging us, we will get back to you as soon as we can!</div>"
     );
   });
